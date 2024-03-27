@@ -1,4 +1,4 @@
-from encryption.py import *
+from encryption import *
 
 publicKey = [292547, 32807]
 privateKey = [292547, 13163]
