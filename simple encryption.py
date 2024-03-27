@@ -138,11 +138,3 @@ def keyBruteforce(start: int, batchSize: int, pubKey: list): ## Check validity o
             b.append(keyCheck(pubKey, [pubKey[0], i]))
         a += batchSize
     return ['private', pubKey[0], a + b.index(True) - batchSize]
-
-publicKey = [292547, 32807]
-privateKey = [292547, 13163]
-
-print(decrypt(encrypt('Hello, world', publicKey), privateKey))
-print(keyCheck(publicKey, privateKey))
-
-print(keyBruteforce(13000, 5, publicKey))
